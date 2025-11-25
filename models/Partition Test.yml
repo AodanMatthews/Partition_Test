@@ -5,10 +5,6 @@ metrics:
   - unique_name: m_factinternetsales_salesamount_sum
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date Dimension_Date Key Join
-    constraint_translation:
-      from_columns:
-        - quarterrank
-      level: Quarter
     from:
       dataset: factinternetsales
       join_columns:
