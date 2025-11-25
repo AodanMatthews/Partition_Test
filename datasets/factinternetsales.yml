@@ -54,5 +54,8 @@ columns:
     data_type: datetime
   - name: shipdate
     data_type: datetime
+  - name: quarterrank
+    data_type: date
+    sql: CAST(DATE_TRUNC(orderdate, QUARTER) AS Date)
 connection_id: As_Adventure
 table: factinternetsales
