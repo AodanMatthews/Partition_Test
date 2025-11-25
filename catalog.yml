@@ -1,0 +1,6 @@
+version: 1
+unique_name: Partition_Test
+object_type: catalog
+label: Partition_Test
+aggressive_agg_promotion: false
+build_speculative_aggs: true
