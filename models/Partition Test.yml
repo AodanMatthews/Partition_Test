@@ -1,12 +1,26 @@
 unique_name: Partition Test
 object_type: model
 label: Partition Test
+dimensions: []
 metrics:
-  - unique_name: m_factinternetsales_salesamount_sum
+  - unique_name: salesamount_sum
+  - unique_name: Partition_Test_salesamount_sum
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date Dimension_Date Key Join
     from:
       dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    to:
+      dimension: Date Dimension
+      level: Date Key Join
+  - unique_name: As_Adventure_Partition_Test_orderdatekey_to_Date Dimension_Date Key Join
+    constraint_translation:
+      from_columns:
+        - ordermonth
+      level: Month
+    from:
+      dataset: As_Adventure_Partition_Test
       join_columns:
         - orderdatekey
     to:

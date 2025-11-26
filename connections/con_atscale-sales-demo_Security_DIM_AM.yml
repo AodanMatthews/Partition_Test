@@ -1,0 +1,6 @@
+unique_name: con_atscale-sales-demo_Security_DIM_AM
+object_type: connection
+label: con_atscale-sales-demo_Security_DIM_AM
+as_connection: BigQuery
+database: atscale-sales-demo
+schema: Security_DIM_AM

@@ -1,0 +1,7 @@
+unique_name: Partition_Test_salesamount_sum
+object_type: metric
+label: Sales Amount (1)
+calculation_method: sum
+column: salesamount
+dataset: As_Adventure_Partition_Test
+unrelated_dimensions_handling: repeat

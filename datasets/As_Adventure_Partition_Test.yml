@@ -1,6 +1,6 @@
-unique_name: factinternetsales
+unique_name: As_Adventure_Partition_Test
 object_type: dataset
-label: factinternetsales
+label: As_Adventure_Partition_Test
 columns:
   - name: productkey
     data_type: long
@@ -54,8 +54,7 @@ columns:
     data_type: datetime
   - name: shipdate
     data_type: datetime
-  - name: quarterrank
+  - name: ordermonth
     data_type: datetime
-    sql: DATE_TRUNC(orderdate, QUARTER)
 connection_id: con_atscale-sales-demo_Security_DIM_AM
-table: Test_copy
+table: As_Adventure_Partition_Test
