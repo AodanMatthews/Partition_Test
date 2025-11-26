@@ -7,6 +7,10 @@ metrics:
   - unique_name: Partition_Test_salesamount_sum
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date Dimension_Date Key Join
+    constraint_translation:
+      from_columns:
+        - quarterrank
+      level: Month
     from:
       dataset: factinternetsales
       join_columns:

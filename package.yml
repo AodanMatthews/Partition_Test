@@ -1,0 +1,6 @@
+version: 1
+packages:
+  - name: shared
+    url: https://github.com/AodanMatthews/AS_Adventure_Calendar
+    branch: main
+    version: 'commit:32125c0429ea03d0a6a218731f5d35724258a8cb'

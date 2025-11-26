@@ -56,6 +56,6 @@ columns:
     data_type: datetime
   - name: quarterrank
     data_type: datetime
-    sql: DATE_TRUNC(orderdate, QUARTER)
+    sql: DATE_TRUNC(orderdate, MONTH)
 connection_id: con_atscale-sales-demo_Security_DIM_AM
 table: Test_copy

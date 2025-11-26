@@ -1,6 +1,0 @@
-unique_name: As_Adventure
-object_type: connection
-label: As_Adventure
-as_connection: BigQuery
-database: atscale-sales-demo
-schema: as_adventure_small_training
